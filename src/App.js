@@ -18,7 +18,17 @@ class App extends Component {
     // Built in react function to render html
     render() {
         return (
-            <div className="App"></div>
+            <div className='App'>
+                <h1>{this.state.name.firstname.toUpperCase()} {this.state.name.lastname.toUpperCase()}</h1>
+                <button onClick={()=>{
+                    this.setState({name:{
+                        firstname: "chris",
+                            lastname: "pro"
+                        }
+
+                        })
+                }}>switch</button>
+            </div>
         );
     }
 
