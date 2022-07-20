@@ -20,15 +20,24 @@ class App extends Component {
         return (
             <div className='App'>
                 <h1>{this.state.name.firstname.toUpperCase()} {this.state.name.lastname.toUpperCase()}</h1>
-                <button onClick={()=>{
-                    this.setState({name:{
-                        firstname: "chris",
-                            lastname: "pro"
-                        }
-
+                <button onClick={
+                    () => {
+                        this.setState({
+                            name:
+                                {
+                                    firstname: "The actual",
+                                    lastname: "Guy"
+                                }
                         })
-                }}>switch</button>
+                    }
+                }
+                >switch
+                </button>
+
+                <img className={'App-logo'} src={require('./img/venom3.jpeg')}  alt={'img'}/>
+
             </div>
+
         );
     }
 
